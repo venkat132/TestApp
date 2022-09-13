@@ -1,0 +1,19 @@
+disabled_rules: # rule identifiers turned on by default to exclude from running
+  - force_cast
+  - force_try
+  - line_length
+  - identifier_name
+  - notification_center_detachment
+  - trailing_whitespace
+  - function_parameter_count
+  - cyclomatic_complexity
+  - function_body_length
+  - type_body_length
+  - file_length
+  - implicit_getter
+  - large_tuple
+opt_in_rules: # some rules are turned off by default, so you need to opt-in
+  - empty_count # Find all the available rules by running: `swiftlint rules`
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+reporter: "xcode"
